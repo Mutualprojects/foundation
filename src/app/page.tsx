@@ -8,6 +8,7 @@ import { Shield, Users, AlertTriangle, HeartPulse, Bike, ShieldAlert, HeartHands
 import founderImage from "./home_images/WhatsApp Image 2026-07-08 at 8.05.24 AM.jpeg";
 import bannerSlide1 from "./home_images/banner/ChatGPT Image Jul 10, 2026, 01_24_47 AM.png";
 import { OurPride } from "@/components/OurPride";
+import { OurSupporters } from "@/components/OurSupporters";
 
 const slides = [
   {
@@ -655,6 +656,7 @@ export default function Home() {
 
 
       {/* Our Pride Section */}
+      <OurSupporters />
       <OurPride />
     </div>
   );
