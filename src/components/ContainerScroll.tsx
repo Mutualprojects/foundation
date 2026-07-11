@@ -24,7 +24,7 @@ interface ContainerInsetProps extends HTMLMotionProps<"div"> {
 }
 
 const SPRING_TRANSITION_CONFIG = {
-  type: "spring",
+  type: "spring" as const,
   stiffness: 100,
   damping: 16,
   mass: 0.75,
@@ -143,7 +143,7 @@ export const HeroVideo = React.forwardRef<
     <motion.iframe
       ref={ref}
       className={cn(
-        "relative z-10 w-full aspect-video rounded-3xl shadow-2xl border border-white/10",
+        "relative z-10 w-full aspect-video rounded-3xl shadow-2xl",
         className
       )}
       style={{ scale, ...style }}
