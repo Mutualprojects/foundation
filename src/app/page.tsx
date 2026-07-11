@@ -116,7 +116,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 bg-white" ref={containerRef}>
 
       {/* ── Split Hero Carousel — 100vh ──────────────────────── */}
-      <section className="relative w-full h-[calc(100vh-7rem)] flex flex-col lg:flex-row overflow-hidden">
+      <section className="relative w-full min-h-[calc(100vh-5rem)] lg:h-[calc(100vh-5rem)] flex flex-col lg:flex-row overflow-hidden">
 
           {/* LEFT: brand-colored content panel — unchanged */}
           <AnimatePresence initial={false} mode="wait">
@@ -126,7 +126,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.45 }}
-              className={`relative w-full lg:w-[48%] h-1/2 lg:h-full bg-gradient-to-br ${s.bgFrom} ${s.bgTo} flex flex-col justify-center px-6 sm:px-10 lg:px-14 xl:px-16 overflow-hidden`}
+              className={`relative w-full lg:w-[48%] min-h-[60vh] lg:min-h-0 lg:h-full bg-gradient-to-br ${s.bgFrom} ${s.bgTo} flex flex-col justify-center px-6 py-20 sm:px-10 lg:py-0 lg:px-14 xl:px-16 overflow-hidden`}
             >
               <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-white/[0.04] translate-x-1/2 -translate-y-1/2 pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-56 h-56 rounded-full bg-white/[0.03] -translate-x-1/2 translate-y-1/2 pointer-events-none" />
@@ -199,7 +199,7 @@ export default function Home() {
           </AnimatePresence>
 
           {/* RIGHT: premium layered image showcase */}
-          <div className="relative w-full lg:w-[52%] h-1/2 lg:h-full overflow-hidden bg-zinc-100 flex items-center justify-center p-6 lg:p-14">
+          <div className="relative w-full lg:w-[52%] min-h-[50vh] lg:min-h-0 lg:h-full overflow-hidden bg-zinc-100 flex items-center justify-center p-6 py-16 lg:py-0 lg:p-14">
 
             {/* Ambient color wash */}
             <div className="absolute top-[-15%] right-[-15%] w-[65%] h-[65%] bg-blue-200/40 rounded-full blur-[100px] pointer-events-none" />
