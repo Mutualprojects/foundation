@@ -39,6 +39,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'www.orchidsinternationalschool.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'pledge.mygov.in',
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.istockphoto.com',
+      },
     ],
   },
 
