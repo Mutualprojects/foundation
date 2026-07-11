@@ -11,6 +11,8 @@ import { OurPride } from "@/components/OurPride";
 import { OurSupporters } from "@/components/OurSupporters";
 import { VisionMission } from "@/components/VisionMission";
 import { VideoSection } from "@/components/VideoSection";
+import { AccidentAnimation } from "@/components/AccidentAnimation";
+import { CelebrityAwareness } from "@/components/CelebrityAwareness";
 
 const slides = [
   {
@@ -411,6 +413,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Celebrity Awareness Section (3rd Component) */}
+        <CelebrityAwareness />
+
         {/* What Our Founder Said Video Section */}
         <section className="relative w-full py-12 lg:py-16 bg-white border-t border-zinc-100 overflow-hidden">
           <div className="mx-auto max-w-[90rem] px-[10px]">
@@ -634,6 +639,9 @@ export default function Home() {
 
         </section>
 
+
+        {/* Accident Animation Section */}
+        <AccidentAnimation />
 
         {/* Video Campaign Section */}
         <VideoSection />
