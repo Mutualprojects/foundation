@@ -10,6 +10,7 @@ import bannerSlide1 from "./home_images/banner/ChatGPT Image Jul 10, 2026, 01_24
 import { OurPride } from "@/components/OurPride";
 import { OurSupporters } from "@/components/OurSupporters";
 import { VisionMission } from "@/components/VisionMission";
+import { VideoSection } from "@/components/VideoSection";
 
 const slides = [
   {
@@ -633,6 +634,9 @@ export default function Home() {
 
         </section>
 
+
+        {/* Video Campaign Section */}
+        <VideoSection />
 
         <VisionMission />
 
